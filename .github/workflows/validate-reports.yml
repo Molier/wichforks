@@ -13,8 +13,12 @@ on:
       - "docs/PERFORMANCE.md"
       - "scripts/performance_data.py"
       - "data/performance-reports.json"
+      - "data/lichii-reports.json"
       - "docs/COVERAGE.md"
+      - "docs/LICHII-REPORTS.md"
       - "docs/charts/**"
+      - "scripts/scrape_lichii.py"
+      - "scripts/lichii_summary.py"
   workflow_dispatch:
 
 permissions:
@@ -38,3 +42,7 @@ jobs:
         run: python -I scripts/performance_data.py
       - name: Check generated data and charts are up to date
         run: git diff --exit-code -- data/performance-reports.json docs/COVERAGE.md docs/charts
+      - name: Check Lichii summary is up to date
+        run: |
+          python -I scripts/lichii_summary.py
+          git diff --exit-code -- docs/LICHII-REPORTS.md

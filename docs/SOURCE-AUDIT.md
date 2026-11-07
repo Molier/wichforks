@@ -33,7 +33,7 @@ Checked 7 Nov 2026 against the GitHub, Forgejo and GitLab APIs. A project is aud
 
 All first picks publish source in the repository. Most are GPL-3.0: SmileyTatsu for Mario Kart World, Selevet or PokeDinner for Donkey Kong Bananza, notsapinho for Pokopia, Lichii, Frizti or Orchid for Ocarina of Time, and Droplet for online play. Banana Native covers Android as a native port, not an emulator; its repo is MIT while its release notes say GPL-3.0-or-later. nxnative covers macOS the same way: MIT source, no prebuilt release, and not an emulator.
 
-Lichii now publishes numbered releases again, with build 94/95 assets for Windows, Linux and macOS. Its README still points downloads to the old zortos293/Eglantine releases page and asks for crypto donations. Use the Lichii releases tab and verify any donation address from the repository itself.
+Lichii now publishes numbered releases again, with build 94/95 assets for Windows, Linux and macOS. Its README still points downloads to the old zortos293/Eglantine releases page and asks for crypto donations. Use the Lichii releases tab and verify any donation address from the repository itself. Its public report hub is the largest single source of OoT reports: 202 public reports were scraped on 7 Nov and summarized in [Lichii reports](LICHII-REPORTS.md).
 
 Anka is source-complete and auditable, with source zips and a checksum file in its release. It stays out of the first picks for now because it has one release, 7 stars, and a DK result measured on one PC. Its code and commit messages are largely AI-assisted, which the project discloses.
 

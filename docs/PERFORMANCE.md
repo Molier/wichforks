@@ -76,7 +76,7 @@ A few representative rows:
 
 ## Zelda: Ocarina of Time remake
 
-The field reports below use Lichii build 80 unless noted. Build 88 or newer is the current recommendation, but most community numbers still come from build 80.
+The field reports below use Lichii build 80 unless noted. Build 88 or newer is the current recommendation, but most community numbers still come from build 80. The larger public Lichii dataset is in [Lichii reports](LICHII-REPORTS.md): 155 of its 202 reports are OoT.
 
 | Build | CPU | GPU | RAM | Performance | Notes | Source |
 |---|---|---|---|---|---|---|

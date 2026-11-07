@@ -50,6 +50,8 @@ The full [coverage page](docs/COVERAGE.md) has the game-by-GPU, game-by-CPU, bui
 
 The charts count reports, not benchmark scores. CPU single-core speed and build choice often decide FPS; the GPU vendor branches are mainly about compatibility and known driver bugs. Native ports such as nxnative and Banana Native are not comparable to emulator builds.
 
+Lichii's public report hub is mirrored locally: [202 reports, scraped 7 Nov](docs/LICHII-REPORTS.md).
+
 ---
 
 ## Decision tree
@@ -394,7 +396,7 @@ All links checked 5-7 Nov 2026. Release metadata read from the GitHub and Forgej
 - AMD and independent: [MythosOfs/Orchid](https://github.com/MythosOfs/Orchid), [releases](https://github.com/MythosOfs/Orchid/releases)
 - Game-specific lab: [PokeDinner](https://git.eden-emu.dev/Franseven/PokeDinner-a-Eglantine-Fork), [releases](https://git.eden-emu.dev/Franseven/PokeDinner-a-Eglantine-Fork/releases)
 - Pokopia build: [notsapinho/Eglantine](https://github.com/notsapinho/Eglantine), [releases](https://github.com/notsapinho/Eglantine/releases)
-- Game patches: [zortos293/Lichii](https://github.com/zortos293/Lichii), [releases](https://github.com/zortos293/Lichii/releases), [build-80 Actions run](https://github.com/zortos293/Lichii/actions/runs/42021953813)
+- Game patches: [zortos293/Lichii](https://github.com/zortos293/Lichii), [releases](https://github.com/zortos293/Lichii/releases), [public reports](https://lichii.zortos.me/reports), [local summary](docs/LICHII-REPORTS.md)
 - OoT visual fixes: [Frizti/Lichii](https://github.com/Frizti/Lichii), [frizti-v1](https://github.com/Frizti/Lichii/releases/tag/frizti-v1)
 - Private online: [Droplet](https://gitlab.com/seighttt/droplet), [releases](https://gitlab.com/seighttt/droplet/-/releases), [Reservoir server branch](https://gitlab.com/seighttt/droplet/-/tree/server)
 - Hyrule Warriors and nx2-merged: [rdenno/Eglantine](https://github.com/rdenno/Eglantine), [releases](https://github.com/rdenno/Eglantine/releases)
@@ -445,3 +447,4 @@ python -I scripts/reports.py validate
 | 2026-11-06 | Added six recent reports from the offline archive: low-end and laptop MKW configs, the DK build 212 crash, i5-12600K with RX 9070 XT, and Orchid on RX 6950 XT. |
 | 2026-11-06 | Added Anka, a new Windows performance fork, with its self-reported DK result, source audit and caveats. Not a first pick. |
 | 2026-11-07 | Updated Lichii to build 88+ and build 94/95, added the Eglantine OoT and rc1 regressions, and added nxnative for macOS native builds. |
+| 2026-11-07 | Scraped 202 public Lichii compatibility reports into data/lichii-reports.json, with a generated summary page and CI check. |
