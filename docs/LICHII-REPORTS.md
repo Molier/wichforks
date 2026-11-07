@@ -82,6 +82,16 @@ These are player-submitted compatibility reports, not benchmarks. Status labels 
 - 92 reports mention an FPS number. OoT FPS mentions run from 10 to 120 FPS. Scene, shader compilation and frame generation explain most of the spread.
 - Shader mentions are the most common technical theme (117 reports), followed by crashes (60) and stutter (58).
 
+## Charts
+
+![Reports by game](charts/lichii/games.svg)
+
+![Status by build](charts/lichii/status-by-build.svg)
+
+![Status by GPU vendor](charts/lichii/status-by-gpu.svg)
+
+![Status by OS](charts/lichii/status-by-os.svg)
+
 ## Reports with an FPS number
 
 The 35 most recent reports with a numeric FPS value. The full list is in the JSON dataset.

@@ -45,4 +45,4 @@ jobs:
       - name: Check Lichii summary is up to date
         run: |
           python -I scripts/lichii_summary.py
-          git diff --exit-code -- docs/LICHII-REPORTS.md
+          git diff --exit-code -- docs/LICHII-REPORTS.md docs/charts/lichii

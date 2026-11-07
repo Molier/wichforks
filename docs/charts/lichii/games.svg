@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="756" viewBox="0 0 1100 756">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#111827">Lichii reports by game</text>
+<text x="24" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b7280">202 public reports, scraped 2026-11-07</text>
+<rect x="24" y="67" width="10" height="10" fill="#2563eb"/>
+<text x="39" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#374151">Reports</text>
+<line x1="300.0" y1="90" x2="300.0" y2="714" stroke="#e5e7eb" stroke-width="1"/>
+<text x="300.0" y="732" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">0</text>
+<line x1="477.5" y1="90" x2="477.5" y2="714" stroke="#e5e7eb" stroke-width="1"/>
+<text x="477.5" y="732" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">50</text>
+<line x1="655.0" y1="90" x2="655.0" y2="714" stroke="#e5e7eb" stroke-width="1"/>
+<text x="655.0" y="732" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">100</text>
+<line x1="832.5" y1="90" x2="832.5" y2="714" stroke="#e5e7eb" stroke-width="1"/>
+<text x="832.5" y="732" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">150</text>
+<line x1="1010.0" y1="90" x2="1010.0" y2="714" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1010.0" y="732" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">200</text>
+<text x="288" y="114" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">The Legend of Zelda: Ocarina of Time</text>
+<rect x="300.0" y="98" width="550.2" height="24" fill="#2563eb"/>
+<text x="858.2" y="114" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">155</text>
+<text x="288" y="148" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Mario Kart World</text>
+<rect x="300.0" y="132" width="46.1" height="24" fill="#2563eb"/>
+<text x="354.1" y="148" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">13</text>
+<text x="288" y="182" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Donkey Kong Bananza</text>
+<rect x="300.0" y="166" width="24.9" height="24" fill="#2563eb"/>
+<text x="332.9" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">7</text>
+<text x="288" y="216" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Pokémon Pokopia</text>
+<rect x="300.0" y="200" width="14.2" height="24" fill="#2563eb"/>
+<text x="322.2" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">4</text>
+<text x="288" y="250" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Fire Emblem: Fortune's Weave</text>
+<rect x="300.0" y="234" width="10.7" height="24" fill="#2563eb"/>
+<text x="318.6" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">3</text>
+<text x="288" y="284" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Yoshi and the Mysterious Book</text>
+<rect x="300.0" y="268" width="10.7" height="24" fill="#2563eb"/>
+<text x="318.6" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">3</text>
+<text x="288" y="318" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Splatoon Raiders</text>
+<rect x="300.0" y="302" width="10.7" height="24" fill="#2563eb"/>
+<text x="318.6" y="318" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">3</text>
+<text x="288" y="352" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Hyrule Warriors: Age of Imprisonment</text>
+<rect x="300.0" y="336" width="7.1" height="24" fill="#2563eb"/>
+<text x="315.1" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">2</text>
+<text x="288" y="386" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Orbitals</text>
+<rect x="300.0" y="370" width="7.1" height="24" fill="#2563eb"/>
+<text x="315.1" y="386" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">2</text>
+<text x="288" y="420" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Pokémon Legends: Z-A – Nintendo Switch 2 Edition</text>
+<rect x="300.0" y="404" width="7.1" height="24" fill="#2563eb"/>
+<text x="315.1" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">2</text>
+<text x="288" y="454" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Xenoblade Chronicles 2 – Nintendo Switch 2 Edition</text>
+<rect x="300.0" y="438" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="488" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Kirby Air Riders</text>
+<rect x="300.0" y="472" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="522" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Mario Tennis Fever</text>
+<rect x="300.0" y="506" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="556" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">The Legend of Zelda: Breath of the Wild – Nintendo Switch 2 Edition</text>
+<rect x="300.0" y="540" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="556" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="590" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">The Duskbloods</text>
+<rect x="300.0" y="574" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="624" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Minecraft</text>
+<rect x="300.0" y="608" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="624" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="658" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Metroid Prime 4: Beyond – Nintendo Switch 2 Edition</text>
+<rect x="300.0" y="642" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="658" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+<text x="288" y="692" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#111827">Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park</text>
+<rect x="300.0" y="676" width="3.6" height="24" fill="#2563eb"/>
+<text x="311.6" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4b5563">1</text>
+</svg>

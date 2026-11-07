@@ -12,8 +12,12 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from performance_data import stacked_chart  # noqa: E402
+
 DATA = ROOT / "data" / "lichii-reports.json"
 OUT = ROOT / "docs" / "LICHII-REPORTS.md"
+CHART_DIR = ROOT / "docs" / "charts" / "lichii"
 STATUS_ORDER = ["Perfect", "Playable", "Runs", "Loads", "Unplayable"]
 PROFANITY_RE = re.compile(r"\b(shit|fuck(?:ing)?|damn)\b", re.I)
 GAME_SHORT = {
@@ -56,6 +60,51 @@ def table(header: list[str], rows: list[list[str]]) -> list[str]:
     return lines
 
 
+def generate_charts(reports: list[dict], scraped: str) -> None:
+    CHART_DIR.mkdir(parents=True, exist_ok=True)
+    by_game = Counter(row["game"] for row in reports)
+    stacked_chart(
+        list(by_game),
+        {"Reports": dict(by_game)},
+        "Lichii reports by game",
+        f"{len(reports)} public reports, scraped {scraped}",
+        CHART_DIR / "games.svg",
+    )
+
+    builds = [build for build in ["build-93", "build-95", "build-88", "Frizti"] if any(
+        row.get("build_family") == build for row in reports
+    )]
+    stacked_chart(
+        STATUS_ORDER,
+        {build: Counter(row["status"] for row in reports if row.get("build_family") == build) for build in builds},
+        "Status by build",
+        f"{len(reports)} public reports, scraped {scraped}",
+        CHART_DIR / "status-by-build.svg",
+    )
+
+    vendors = [vendor for vendor in ["NVIDIA", "AMD", "Intel", "Apple"] if any(
+        row.get("gpu_vendor") == vendor for row in reports
+    )]
+    stacked_chart(
+        STATUS_ORDER,
+        {vendor: Counter(row["status"] for row in reports if row.get("gpu_vendor") == vendor) for vendor in vendors},
+        "Status by GPU vendor",
+        f"{len(reports)} public reports, scraped {scraped}",
+        CHART_DIR / "status-by-gpu.svg",
+    )
+
+    oses = [os_name for os_name in ["Windows", "Linux", "macOS"] if any(
+        row.get("os_family") == os_name for row in reports
+    )]
+    stacked_chart(
+        STATUS_ORDER,
+        {os_name: Counter(row["status"] for row in reports if row.get("os_family") == os_name) for os_name in oses},
+        "Status by OS",
+        f"{len(reports)} public reports, scraped {scraped}",
+        CHART_DIR / "status-by-os.svg",
+    )
+
+
 def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     reports = data["reports"]
@@ -65,6 +114,7 @@ def main() -> None:
     by_vendor = Counter(row.get("gpu_vendor") or "Unknown" for row in reports)
     by_os = Counter(row.get("os_family") or "Unknown" for row in reports)
     fps_rows = [row for row in reports if row.get("fps_min") is not None]
+    generate_charts(reports, data["scraped"])
 
     lines = [
         "# Lichii public compatibility reports",
@@ -120,6 +170,16 @@ def main() -> None:
         f"{min(row['fps_min'] for row in oot_fps)} to {max(row['fps_max'] for row in oot_fps)} FPS. "
         "Scene, shader compilation and frame generation explain most of the spread.",
         "- Shader mentions are the most common technical theme (117 reports), followed by crashes (60) and stutter (58).",
+        "",
+        "## Charts",
+        "",
+        "![Reports by game](charts/lichii/games.svg)",
+        "",
+        "![Status by build](charts/lichii/status-by-build.svg)",
+        "",
+        "![Status by GPU vendor](charts/lichii/status-by-gpu.svg)",
+        "",
+        "![Status by OS](charts/lichii/status-by-os.svg)",
         "",
         "## Reports with an FPS number",
         "",
