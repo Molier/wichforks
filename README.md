@@ -48,6 +48,8 @@ If you only read one line: install **Djihads80/Eglantine** ★ first. Switch for
 
 The full [coverage page](docs/COVERAGE.md) has the game-by-GPU, game-by-CPU, build and setup tables. The normalized data is in [data/performance-reports.json](data/performance-reports.json).
 
+The charts count reports, not benchmark scores. CPU single-core speed and build choice often decide FPS; the GPU vendor branches are mainly about compatibility and known driver bugs. Native ports such as nxnative and Banana Native are not comparable to emulator builds.
+
 ---
 
 ## Decision tree

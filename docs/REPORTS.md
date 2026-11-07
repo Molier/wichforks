@@ -4,5 +4,19 @@
 
 User-submitted experience reports, aggregated from [`data/reports/`](../data/reports/). They are anecdotes, not benchmarks. See the [reporting guide](../data/reports/README.md) and the [main fork guide](../README.md).
 
-_No reports yet. [Open an experience report](../issues/new?template=experience-report.yml) to add the first one._
+1 reports, 1 games, 1 forks
+
+## Best reported combinations
+
+| Game | Fork | Best reported | Builds | Reports | Typical FPS |
+|---|---|---|---|---|---|
+| Mario Kart World | Eglantine ZendNevs | Playable | v2.0.6 (Windows package unchanged from v2.0.5) | 1 | 60 |
+
+## All reports
+
+| Date | Game | Fork | Build | Platform | CPU | GPU | Status | FPS | Reporter |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-07 | Mario Kart World | Eglantine ZendNevs | v2.0.6 (Windows package unchanged from v2.0.5) | Windows 11 Pro 25H2 | Ryzen 9 5950X | RTX 3090 | Playable | 60 | [MrYeast3kjr](https://github.com/riyadhHDA/wichforks/issues/5) |
+
+_Latest report: 2026-11-07._
 

@@ -1,0 +1,19 @@
+{
+  "fork_id": "zendnevs-eglantine",
+  "build": "v2.0.6 (Windows package unchanged from v2.0.5)",
+  "date": "2026-11-07",
+  "game": "Mario Kart World",
+  "platform": "Windows 11 Pro 25H2",
+  "cpu": "Ryzen 9 5950X",
+  "gpu": "RTX 3090",
+  "driver": "Windows driver 32.0.16.1088",
+  "ram_gb": 64,
+  "settings": "Docked, 1x resolution, MKW Dynamic FPS on, frame generation off, frame pacing target 60",
+  "status": "playable",
+  "fps_typical": 60,
+  "fps_range": "up to 60",
+  "issues": ["performance drops"],
+  "notes": "Mushroom Cup, 150cc, four races; race 4 had eight laps. Race 1 laps 2-3 appeared flat at 60 FPS; race 3 had more slowdowns. The 60 FPS in a paused menu is not race performance. Lowering resolution scale made almost no difference, so 1x was kept. Player observations, not benchmark measurements.",
+  "reporter": "MrYeast3kjr",
+  "source_url": "https://github.com/riyadhHDA/wichforks/issues/5"
+}

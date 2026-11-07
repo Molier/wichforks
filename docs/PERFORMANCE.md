@@ -6,6 +6,8 @@ Charts and the game-by-setup coverage matrix are in [coverage](COVERAGE.md). The
 
 `Not stated` means the report did not include that field. `Unspecified` means no build number was given. Rows are grouped by game, with the most complete configs first.
 
+These tables are not a GPU ranking. A faster GPU can lose to a slower one when the CPU or build is the bottleneck, and AMD rows include rendering bugs that are not raw performance.
+
 ## What the reports suggest
 
 - CPU single-core speed matters a lot. OoT remake runs at 54-60 FPS on a 9800X3D, 20-24 FPS on an i3-10100, and an RTX 2070 with a 9800X3D beats a 7900 XTX with a 13400F.
