@@ -16,3 +16,6 @@ data/reports/inbox/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Status site build output
+_site/

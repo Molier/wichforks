@@ -19,6 +19,12 @@ on:
       - "docs/charts/**"
       - "scripts/scrape_lichii.py"
       - "scripts/lichii_summary.py"
+      - "data/games.json"
+      - "data/ports.json"
+      - "data/lookalikes.json"
+      - "scripts/site.py"
+      - "scripts/test_site.py"
+      - "site/**"
   workflow_dispatch:
 
 permissions:
@@ -34,6 +40,11 @@ jobs:
           python-version: "3.12"
       - name: Validate report files
         run: python -I scripts/reports.py validate
+      - name: Validate and test the status site data
+        run: |
+          python -I scripts/site.py validate
+          python -I scripts/test_site.py
+          python -I scripts/site.py build --offline --out /tmp/site
       - name: Check generated report table is up to date
         run: |
           python -I scripts/reports.py render --out /tmp/REPORTS.md
