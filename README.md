@@ -9,6 +9,8 @@ A use-case guide to Nintendo Switch 2 emulator forks and adjacent native ports: 
 > [!WARNING]
 > Everything here is experimental. Builds land several times a day, regress without notice, and fork rankings depend on the game and driver. "Best" below means "best documented starting point for that use case on 7 Nov 2026", nothing more.
 
+**Live status:** [riyadhhda.github.io/wichforks](https://riyadhhda.github.io/wichforks/) lists every fork and native port below with its newest release, read from the repositories every hour, and filters them by game, platform and GPU. How it works: [docs/SITE.md](docs/SITE.md).
+
 Official Eden does not support Switch 2 in its stable release. The Switch 2 builds here are community forks, not Eden team releases.
 
 The page is ordered by what people ask first: which fork to use, what has been tested, then setup and trust checks.
@@ -412,11 +414,12 @@ All links checked 5-7 Nov 2026. Release metadata read from the GitHub and Forgej
 
 Found a fork that deserves a row, or a link that died? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a PR. Rules: one fork per PR, link the upstream repo, state platform, tested game, build and GPU/driver, and no ROM, key or firmware links.
 
-Data lives in [`data/forks.json`](data/forks.json) and reports live in [`data/reports/`](data/reports/README.md). Run both checks before submitting:
+Data lives in [`data/forks.json`](data/forks.json), native single-game ports in [`data/ports.json`](data/ports.json), and reports in [`data/reports/`](data/reports/README.md). Run the checks before submitting:
 
 ```bash
 python -I scripts/check_links.py
 python -I scripts/reports.py validate
+python -I scripts/site.py validate
 ```
 
 ## Update log
@@ -448,3 +451,4 @@ python -I scripts/reports.py validate
 | 2026-11-06 | Added Anka, a new Windows performance fork, with its self-reported DK result, source audit and caveats. Not a first pick. |
 | 2026-11-07 | Updated Lichii to build 88+ and build 94/95, added the Eglantine OoT and rc1 regressions, and added nxnative for macOS native builds. |
 | 2026-11-07 | Scraped 202 public Lichii compatibility reports into data/lichii-reports.json, with a generated summary page and CI check. |
+| 2026-11-10 | Added the live status page (`docs/SITE.md`): release data read from the repositories every hour, a game index, native single-game ports in `data/ports.json`, lookalike repositories marked as possible spam, and a list of renamed, removed or outdated entries. |

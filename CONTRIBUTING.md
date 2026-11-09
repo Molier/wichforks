@@ -64,12 +64,50 @@ Allowed `confidence` values: `documented`, `community-reported`, `source-only`, 
 
 Then add the fork to the relevant README tables and, if necessary, the game matrix. Use the same wording as the JSON so the two don't drift.
 
+## Adding a native port
+
+Static recompilations and other native builds of a single game are not forks, so they go in `data/ports.json`:
+
+```json
+{
+  "id": "short-slug",
+  "name": "Display Name (Author)",
+  "game": "id from data/games.json",
+  "kind": "static recompilation",
+  "state": "experimental",
+  "repo": "https://github.com/author/repo",
+  "releases": "https://github.com/author/repo/releases",
+  "host": "GitHub",
+  "platforms": ["Windows 10/11 x64"],
+  "gpu": ["Vulkan 1.3"],
+  "game_version": "1.0.0",
+  "license": "GPL-3.0",
+  "source_in_repo": true,
+  "confidence": "documented",
+  "checked": "2026-11-10",
+  "notes": "Short, factual, sourced."
+}
+```
+
+- Allowed `state` values: `playable`, `experimental`, `not playable`, `superseded`. Use the project's own README wording; do not upgrade it.
+- `checked` is the day you read the README or release notes.
+- Leave out release tags, stars and dates. The [status page](docs/SITE.md) reads them from the repository.
+- The same rules apply as for forks: one port per PR, source in the repository, no game files, keys or links to them.
+
+A new game needs an entry in `data/games.json` with an `id`, a `name` and the `aliases` people use for it in `best_for` strings. Titles only, no title IDs.
+
+## Lookalike repositories
+
+`data/lookalikes.json` lists repositories that reuse the name of a listed project without being that project. The status page shows them as possible spam. A row states only what the repository itself shows (not a fork of upstream, no source tree, binary-only release) and the day it was checked. Do not write "malware" unless the upstream project says so in its own README or issue tracker, and link that. Remove the row when the repository is gone.
+
 ## Checking links and reports
 
 ```bash
 python -I scripts/check_links.py
 python -I scripts/reports.py validate
 python -I scripts/performance_data.py
+python -I scripts/site.py validate
+python -I scripts/test_site.py
 ```
 
 The link checker exits non-zero on dead (404/410) or unreachable URLs. Rate limits and 5xx answers are retried, then reported as INCONCLUSIVE without failing the run. The report validator exits non-zero on schema errors. After editing a performance table, regenerate the JSON, SVG charts and coverage page, and commit them; CI checks that they are current. Fix dead links or mark the fork as archived or removed in the same PR.
