@@ -1,0 +1,91 @@
+{
+  "note": "Game index for the status site. `aliases` are matched, case-insensitive and on word boundaries, against the `best_for` strings in forks.json; native ports in ports.json name a game by `id`. Titles only: no file names, title IDs or links to game files.",
+  "games": [
+    {
+      "id": "mario-kart-world",
+      "name": "Mario Kart World",
+      "aliases": [
+        "mario kart world",
+        "mkw"
+      ],
+      "guide": "docs/MKW.md"
+    },
+    {
+      "id": "donkey-kong-bananza",
+      "name": "Donkey Kong Bananza",
+      "aliases": [
+        "donkey kong bananza",
+        "bananza"
+      ],
+      "guide": "docs/DONKEY-KONG.md"
+    },
+    {
+      "id": "pokemon-pokopia",
+      "name": "Pokemon Pokopia",
+      "aliases": [
+        "pokopia"
+      ],
+      "guide": "docs/POKOPIA.md"
+    },
+    {
+      "id": "zelda-oot-remake",
+      "name": "Zelda: Ocarina of Time remake",
+      "aliases": [
+        "ocarina of time",
+        "oot"
+      ]
+    },
+    {
+      "id": "fire-emblem-fortunes-weave",
+      "name": "Fire Emblem Fortune's Weave",
+      "aliases": [
+        "fire emblem",
+        "fortune's weave"
+      ]
+    },
+    {
+      "id": "splatoon-raiders",
+      "name": "Splatoon Raiders",
+      "aliases": [
+        "splatoon raiders"
+      ]
+    },
+    {
+      "id": "hyrule-warriors-aoi",
+      "name": "Hyrule Warriors: Age of Imprisonment",
+      "aliases": [
+        "hyrule warriors",
+        "age of imprisonment"
+      ]
+    },
+    {
+      "id": "star-fox",
+      "name": "Star Fox",
+      "aliases": [
+        "star fox"
+      ]
+    },
+    {
+      "id": "mario-tennis-fever",
+      "name": "Mario Tennis Fever",
+      "aliases": [
+        "mario tennis fever"
+      ]
+    },
+    {
+      "id": "kirby-air-riders",
+      "name": "Kirby Air Riders",
+      "aliases": [
+        "kirby air riders"
+      ]
+    },
+    {
+      "id": "super-mario-bros-wonder",
+      "name": "Super Mario Bros. Wonder",
+      "aliases": [
+        "super mario bros. wonder",
+        "mario wonder"
+      ]
+    }
+  ]
+}

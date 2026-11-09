@@ -1,0 +1,24 @@
+{
+  "updated": "2026-11-10",
+  "note": "Possible spam: repositories that reuse the name of a project in this guide but are not that project. Each row states only what the repository itself shows on the date in `checked`. Nothing here was downloaded or analysed, and a row is not a malware verdict; it means the build cannot be traced to the upstream source. Remove a row when the repository is gone or proves its link to upstream.",
+  "lookalikes": [
+    {
+      "repo": "https://github.com/Manaclenodisconnect/Lichii-Enhanced",
+      "imitates": "lichii",
+      "checked": "2026-11-10",
+      "facts": "Not a fork of zortos293/Lichii. The repository holds a README and a licence file only; the release is a Windows zip with no source to build it from."
+    },
+    {
+      "repo": "https://github.com/Cylinderapfreeze/Lichii-Emulator",
+      "imitates": "lichii",
+      "checked": "2026-11-10",
+      "facts": "Not a fork of zortos293/Lichii. It holds a copy of the Lichii README, one CMakeLists.txt and a source.zip instead of a source tree, and publishes its own copies of release binaries."
+    },
+    {
+      "repo": "https://github.com/Frltzi/Fritchii-Emulator",
+      "imitates": "frizti-lichii",
+      "checked": "2026-11-10",
+      "facts": "Not Frizti/Fritchii: the owner name differs by one letter. Its source folders hold only stub header files of about 40 bytes each; the release is a single zip."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "updated": "2026-11-10",
+  "note": "Native ports of single Switch 2 games: static recompilations and per-game native builds. These are not emulator forks, so they live outside forks.json. Every claim below is documented in the project's own README or release notes on the date given in `checked`; none was tested here. Release, star and activity fields are not stored here: the status site reads them from the host API.",
+  "ports": [
+    {
+      "id": "hookshot",
+      "name": "Hookshot (NotRexed)",
+      "game": "zelda-oot-remake",
+      "kind": "static recompilation",
+      "state": "experimental",
+      "repo": "https://github.com/NotRexed/Hookshot",
+      "releases": "https://github.com/NotRexed/Hookshot/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows 10/11 x64",
+        "Linux x86_64"
+      ],
+      "gpu": [
+        "NVIDIA RTX 20 or newer",
+        "AMD RX 6000 or newer",
+        "Intel Arc"
+      ],
+      "game_version": "update v131072",
+      "license": "GPL-3.0",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "Hookshot Builder compiles the game on your PC from your own dump. The README calls it experimental, says most testing was around the start of the game, and lists stutter on the first visit to each area. Needs AVX2, Vulkan 1.3 with mesh shaders, 16 GB RAM and about 60 GB free while building; Linux needs glibc 2.35 or newer. The README says some antivirus tools flag the release file."
+    },
+    {
+      "id": "nx2navi",
+      "name": "NX2navi (tangerineturtle1)",
+      "game": "zelda-oot-remake",
+      "kind": "static recompilation",
+      "state": "experimental",
+      "repo": "https://github.com/tangerineturtle1/NX2navi",
+      "releases": "https://github.com/tangerineturtle1/NX2navi/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows 10 or later x64"
+      ],
+      "gpu": [
+        "Vulkan 1.3 with mesh shaders"
+      ],
+      "game_version": "1.1.1",
+      "license": "MIT base, additions all rights reserved",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "The README says early development, playable, and names Kokiri Forest, Kakariko Village, Death Mountain Trail and the Temple of Time at 60 fps and above on current GPUs. Windows only; the setup program is unsigned and updates the port itself. Needs 16 GB RAM, about 30 GB free and Vulkan 1.3 with VK_EXT_mesh_shader; integrated AMD GPUs can fail at the title screen. The source is public to read but not open source: LICENSE-ADDITIONS reserves all rights on the project's own changes."
+    },
+    {
+      "id": "ocarina-recomp",
+      "name": "Ocarina Recomp (sostenesfreitas)",
+      "game": "zelda-oot-remake",
+      "kind": "static recompilation",
+      "state": "superseded",
+      "repo": "https://github.com/sostenesfreitas/ocarina-recomp",
+      "releases": "https://github.com/sostenesfreitas/ocarina-recomp/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows"
+      ],
+      "gpu": [
+        "Tested on an RTX 5090 only"
+      ],
+      "game_version": "1.1.1",
+      "license": "GPL-3.0",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "Since November 2026 its README recommends Hookshot for playing and says its fixes now go to Hookshot as contributions; the repository stays as a Portuguese-language support point. Tested by its author on one PC (Ryzen 9 9950X3D, RTX 5090) around the start of the game. Saves are compatible with Hookshot."
+    },
+    {
+      "id": "recompia",
+      "name": "Recompia (Dittobyte)",
+      "game": "pokemon-pokopia",
+      "kind": "static recompilation",
+      "state": "playable",
+      "repo": "https://github.com/Dittobyte/Recompia",
+      "releases": "https://github.com/Dittobyte/Recompia/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows",
+        "Linux / SteamOS (through Proton)"
+      ],
+      "gpu": [
+        "Vulkan 1.3"
+      ],
+      "game_version": "2.0.1a",
+      "license": "GPL-3.0",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "Formerly featureJosh/pokopia-recomp; old links redirect. A launcher builds the game from your own extracted copy. Link Play multiplayer, with cross-play to pokopia-native players on game 2.0.1. On Linux the launcher is an AppImage and the game runs through Proton; the README quotes about 26 to 53 fps on a Steam Deck as measured by players. The README says the project is built primarily with AI under human review."
+    },
+    {
+      "id": "pokopia-native",
+      "name": "Pokopia Native (xFractals)",
+      "game": "pokemon-pokopia",
+      "kind": "native build",
+      "state": "playable",
+      "repo": "https://github.com/xFractals/pokopia-native",
+      "releases": "https://github.com/xFractals/pokopia-native/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows 10/11 x64",
+        "macOS (Apple silicon)",
+        "iPhone",
+        "Android 11+ (beta)",
+        "Linux x86_64 / Steam Deck"
+      ],
+      "gpu": [
+        "Vulkan 1.3 (Windows, Linux)",
+        "Apple silicon",
+        "Snapdragon 8 Gen 1 or newer (Android)"
+      ],
+      "license": "MIT",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "A builder makes the app from your own dump; the first build takes 15 to 40 minutes. The README lists Windows, Mac, iPhone and Linux as stable and Android as beta. Link Play for up to four players and saves that move between PC, Mac and iPhone; Link Play is not yet on Android. Windows and Linux need AVX2 and Vulkan 1.3. The Mac and iPhone apps run on NxNative."
+    },
+    {
+      "id": "dkb-pc-recomp",
+      "name": "DKB Recomp (Lucas-blip-png)",
+      "game": "donkey-kong-bananza",
+      "kind": "static recompilation",
+      "state": "not playable",
+      "repo": "https://github.com/Lucas-blip-png/dkb-pc-recomp",
+      "releases": "https://github.com/Lucas-blip-png/dkb-pc-recomp/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows x64"
+      ],
+      "gpu": [
+        "Vulkan"
+      ],
+      "license": "GPL-3.0",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "The README status is \"Not playable yet\": the game boots through the title screen into the tutorial cave and answers the controller, but it can still crash and many effects are missing. The release carries an installer that builds the game from your own dump. Built on TotK Recomp."
+    },
+    {
+      "id": "fefw-recomp",
+      "name": "fefw-recomp (Goldoire)",
+      "game": "fire-emblem-fortunes-weave",
+      "kind": "static recompilation",
+      "state": "experimental",
+      "repo": "https://github.com/Goldoire/fefw-recomp",
+      "releases": "https://github.com/Goldoire/fefw-recomp/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Windows 10/11 x64"
+      ],
+      "gpu": [
+        "Vulkan 1.3"
+      ],
+      "game_version": "update 131072",
+      "license": "GPL-3.0",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "A launcher builds the game from your own decrypted dump. The README lists 60 and 120 FPS modes, ultrawide, keyboard or controller, and DLC from your own dump. Needs Vulkan 1.3, 16 GB RAM and about 30 GB free. Built on nxrecomp and the Pokopia recomp runtime. The README gives no playthrough or hardware test record."
+    },
+    {
+      "id": "mkw-recomp",
+      "name": "mkw-recomp (adriadam10)",
+      "game": "mario-kart-world",
+      "kind": "static recompilation",
+      "state": "experimental",
+      "repo": "https://github.com/adriadam10/mkw-recomp",
+      "releases": "https://github.com/adriadam10/mkw-recomp/releases",
+      "host": "GitHub",
+      "platforms": [
+        "Linux x86_64",
+        "Windows x64"
+      ],
+      "gpu": [
+        "Vulkan"
+      ],
+      "game_version": "1.0.0",
+      "license": "MIT",
+      "source_in_repo": true,
+      "confidence": "documented",
+      "checked": "2026-11-10",
+      "notes": "The README status on 9 Nov 2026 is early: it boots, plays the intro, goes through the menus and races on Linux and Windows. Races run at about 30 fps on a Radeon 660M at 720p; 60 fps is the stated goal. Known problems include unfinished menus, audio cuts during movies and GPU hangs on some AMD drivers. No online play."
+    }
+  ]
+}

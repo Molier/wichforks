@@ -30,6 +30,14 @@ body:
         - "sylvieistaken/selevet-eglantine"
         - "heydemoura/EglantinePS5"
         - "astralbeexd/Eglantine-3060Ti-16GB"
+        - "NotRexed/Hookshot (native port)"
+        - "tangerineturtle1/NX2navi (native port)"
+        - "sostenesfreitas/ocarina-recomp (native port)"
+        - "Dittobyte/Recompia (native port)"
+        - "xFractals/pokopia-native (native port)"
+        - "Lucas-blip-png/dkb-pc-recomp (native port)"
+        - "Goldoire/fefw-recomp (native port)"
+        - "adriadam10/mkw-recomp (native port)"
         - "Other / not listed"
     validations:
       required: true

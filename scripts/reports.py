@@ -48,8 +48,14 @@ def load_json(path: Path):
 
 
 def load_forks(path: Path) -> dict[str, dict]:
+    """Projects a report may name: forks, plus native ports from ports.json."""
     data = load_json(path)
-    return {fork["id"]: fork for fork in data.get("forks", [])}
+    projects = {fork["id"]: fork for fork in data.get("forks", [])}
+    ports_path = path.with_name("ports.json")
+    if ports_path.exists():
+        for port in load_json(ports_path).get("ports", []):
+            projects.setdefault(port["id"], port)
+    return projects
 
 
 def is_int(value) -> bool:
